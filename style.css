@@ -1,0 +1,28 @@
+html {
+	min-height: 100%;
+}
+@font-face {
+	font-family: 'arcon';
+	src:  url('Arcon-Regular.otf');
+	src:  url('Arcon-Rounded-Regular.otf');
+
+}
+h1
+{
+	font-size:  40px;
+}
+
+h1, h2 {
+	text-align: center;
+}
+
+body {
+	background-image: url('background_picture1.jpg');
+	background-size: cover;
+	font-family: 'arcon', Calibri, Arial, sans-serif, serif;
+}
+
+.floatingimage {
+	float: right;
+	border:  1px solid black;
+}
