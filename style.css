@@ -1,28 +1,94 @@
-html {
-	min-height: 100%;
-}
-@font-face {
+@font-face
+{
 	font-family: 'arcon';
 	src:  url('Arcon-Regular.otf');
 	src:  url('Arcon-Rounded-Regular.otf');
-
 }
+
 h1
 {
-	font-size:  40px;
+	font-size:  50px;
+	letter-spacing: 0.1em;
+	color: #28282D;
 }
 
-h1, h2 {
+h2
+{	color: #28282D;
+	font-size: 30px;
+	word-spacing: 0.3em;
+	line-height: 1.5em;
+}
+
+h1, h2
+{
 	text-align: center;
 }
 
-body {
+h3
+{
+	color: #28282D;
+	font-size: 30px;
+	text-align: center;
+}
+
+body
+{
 	background-image: url('background_picture1.jpg');
+	min-height: 100%;
 	background-size: cover;
+	background-repeat: no-repeat;
 	font-family: 'arcon', Calibri, Arial, sans-serif, serif;
 }
 
-.floatingimage {
+.floatingimage
+{
 	float: right;
-	border:  1px solid black;
+	border:  1.5px solid black;
+}
+
+.class menu
+{
+	list-style: none;
+	color: #28282D;
+	font-size: 16px;
+	line-height: 2em;
+	text-align: center;
+}
+
+.class content
+{
+	list-style: none;
+	color: #28282D;
+	font-size: 16px;
+	line-height: 2em;
+	text-align: center;
+}
+
+
+nav ul
+{
+	list-style-type: none;
+	display: flex;
+	border: solid;
+	border-radius: 15px; color: #28282D;
+	margin-right: 30px;
+	background-color: #28282D;
+	margin-top: 40px;
+	margin-bottom: 150px;
+	justify-content: space-around;
+	padding: 3px;
+}
+
+a
+{
+	color: #BCBCC3;
+	text-decoration: none;
+	font-size: 1.5em;
+
+}
+
+a:hover
+{
+	font-weight: bold;
+	color: ivory;
 }
