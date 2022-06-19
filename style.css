@@ -9,26 +9,30 @@ h1
 {
 	font-size:  50px;
 	letter-spacing: 0.1em;
-	color: #28282D;
+	margin-bottom: 50px;
+	text-align: center;
 }
 
 h2
-{	color: #28282D;
-	font-size: 30px;
+{	
+	font-size: 25px;
 	word-spacing: 0.3em;
-	line-height: 1.5em;
+	line-height: 1.8em;
+	text-align: justify;
+	margin-right: 50px;
+	margin-left: 50px;
 }
 
-h1, h2
+strong
 {
-	text-align: center;
+	text-decoration: none;
 }
 
 h3
 {
-	color: #28282D;
-	font-size: 30px;
+	font-size: 26px;
 	text-align: center;
+	letter-spacing: 0.1em;
 }
 
 body
@@ -38,32 +42,16 @@ body
 	background-size: cover;
 	background-repeat: no-repeat;
 	font-family: 'arcon', Calibri, Arial, sans-serif, serif;
+	color: #FFFFF0;
 }
 
 .floatingimage
 {
 	float: right;
 	border:  1.5px solid black;
+	margin: 50px;
+	border-radius: 3%;
 }
-
-.class menu
-{
-	list-style: none;
-	color: #28282D;
-	font-size: 16px;
-	line-height: 2em;
-	text-align: center;
-}
-
-.class content
-{
-	list-style: none;
-	color: #28282D;
-	font-size: 16px;
-	line-height: 2em;
-	text-align: center;
-}
-
 
 nav ul
 {
@@ -74,21 +62,80 @@ nav ul
 	margin-right: 30px;
 	background-color: #28282D;
 	margin-top: 40px;
-	margin-bottom: 150px;
+	margin-bottom: 60px;
 	justify-content: space-around;
 	padding: 3px;
+	font-size: 14px;
+	line-height: 2em;
+	text-align: center;
+}
+
+p
+{
+	line-height: 1.5em;
+	font-size: 18px;
+}
+
+ul
+{
+	font-size: 16px;
+	line-height: 2.2em;
+	padding-left: 0;
+}
+
+ul li
+{
+list-style-position: inside;
 }
 
 a
 {
-	color: #BCBCC3;
 	text-decoration: none;
-	font-size: 1.5em;
+	font-size: 1.3em;
+	color: #FFFFF0;
 
 }
 
 a:hover
 {
 	font-weight: bold;
-	color: ivory;
+	font-size: 1.5em;
+}
+
+.fa-ul
+{
+	text-decoration: none;
+	font-size: 22px;
+	line-height: 3em;
+}
+
+.flex-container
+{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+.column1, .column2, .column3
+{
+	align-items: center;
+	width:  100%;
+	padding: 10px;
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+.contact
+{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+.byepicture
+
+{
+	display: flex;
+	justify-content: center;
+	margin: auto;
 }
