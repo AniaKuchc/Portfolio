@@ -16,7 +16,7 @@ h1
 
 h2
 {	
-	font-size: 20px;
+	font-size: 16px;
 	word-spacing: 0.3em;
 	line-height: 1.8em;
 	text-align: justify;
@@ -34,7 +34,7 @@ h3
 {
 	font-size: 26px;
 	text-align: center;
-	letter-spacing: 0.1em;
+	letter-spacing: 0.2em;
 	font-weight: bold;
 }
 
@@ -46,34 +46,6 @@ body
 	background-repeat: no-repeat;
 	font-family: 'arcon', Calibri, Arial, sans-serif, serif;
 	color: #FFFFF0;
-}
-
-.welcomepicture
-{
-	border:  1.5px solid black;
-	margin-right: 50px;
-	margin-left: 30px;
-	margin-top: 115px;
-	border-radius: 3%;
-}
-
-.menu
-{
-	list-style-type: none;
-	display: flex;
-	border: solid;
-	border-radius: 15px; color: #28282D;
-	margin-right: 30px;
-	background-color: #28282D;
-	margin-top: 40px;
-	margin-bottom: 40px;
-	margin-left: 20px;
-	margin-right: 20px;
-	justify-content: space-around;
-	padding: 3px;
-	font-size: 14px;
-	line-height: 2em;
-	text-align: center;
 }
 
 p
@@ -104,16 +76,60 @@ a
 
 }
 
-a:hover
+.menulist:hover
 {
 	font-weight: bold;
-	font-size: 1.5em;
+	font-size: 16px;
+}
+
+.welcomepicture
+{
+	margin-right: 50px;
+	margin-left: 30px;
+	margin-top: 110px;
+	border-radius: 3%;
+}
+
+.byepicture
+
+{
+	display: flex;
+	justify-content: center;
+	margin: auto;
+	border-radius: 3%;
+	max-height: 250px;
+	max-width: 450px;
+}
+
+figure figcaption
+{
+	text-align: center;
+}
+
+.menu
+{
+	list-style-type: none;
+	display: flex;
+	border: solid;
+	border-radius: 15px; color: #28282D;
+	margin-right: 30px;
+	background-color: #28282D;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	margin-left: 20px;
+	margin-right: 20px;
+	justify-content: space-around;
+	padding: 3px;
+	font-size: 12px;
+	letter-spacing: 0.05em;
+	line-height: 2em;
+	text-align: center;
 }
 
 .fa-ul
 {
 	text-decoration: none;
-	font-size: 20px;
+	font-size: 18px;
 	line-height: 3em;
 }
 
@@ -146,7 +162,7 @@ a:hover
 	align-items: center;
 	width:  100%;
 	padding: 10px;
-	margin-left: 205px;
+	margin-left: 192px;
 }
 
 .qualites
@@ -154,7 +170,7 @@ a:hover
 	align-items: center;
 	width:  100%;
 	padding: 10px;
-	margin-left: 240px;
+	margin-left: 230px;
 }
 
 .contact
@@ -164,20 +180,23 @@ a:hover
 	align-content: center;
 }
 
-.byepicture
-
+.contact2
 {
-	display: flex;
-	justify-content: center;
-	margin: auto;
-	max-height: 250px;
-	max-width: 450px;
+	text-decoration: none;
+	font-size: 16px;
+	line-height: 3em;
 }
 
-figure figcaption
+.contact2:hover
 {
-	text-align: center;
+	font-weight: bold;
 }
+
+.contact3
+{
+	font-size: 16px;
+}
+
 
 @media only screen and (max-width:  1024px)
 {
@@ -196,11 +215,6 @@ figure figcaption
 	nav li
 	{
 		padding-left: 5px;
-	}
-
-	nav a
-	{
-		font-size: 1.1em;
 	}
 
 	.flex-container
@@ -224,7 +238,12 @@ figure figcaption
 		font-size: 1.8em;
 	}
 
-	h2, h3
+	h2
+	{
+		margin: auto;
+	}
+
+	h3
 	{
 		font-size: 1.1em;
 		margin: auto;
