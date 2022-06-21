@@ -184,7 +184,7 @@ figure figcaption
 .contact2
 {
 	text-decoration: none;
-	font-size: 16px;
+	font-size: 18px;
 	line-height: 3em;
 }
 
@@ -195,7 +195,8 @@ figure figcaption
 
 .contact3
 {
-	font-size: 16px;
+	font-size: 18px;
+	line-height: 3em;
 }
 
 
@@ -241,7 +242,6 @@ figure figcaption
 		margin: auto;
 		line-height: 2.2em;
 	}
-
 
 	.column1, .column2, .column3
 	{
