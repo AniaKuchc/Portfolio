@@ -44,6 +44,7 @@ body
 	min-height: 100%;
 	background-size: cover;
 	background-repeat: no-repeat;
+	background-attachment: fixed;
 	font-family: 'arcon', Calibri, Arial, sans-serif, serif;
 	color: #FFFFF0;
 }
@@ -198,38 +199,30 @@ figure figcaption
 }
 
 
-@media only screen and (max-width:  1024px)
+@media all and (max-width:  1024px)
 {
 	body
 	{
 		width: auto;
+		margin: 10px;
 	}
 
 	.menu
 	{
-		width: auto;
-		flex-direction: column;
+			flex-direction: column;
+			margin: auto;
+			font-size: 16px;
+			line-height: 2.4em;
 	}
 
 
-	nav li
-	{
-		padding-left: 5px;
-	}
 
 	.flex-container
 	{
 		flex-direction: column;
-		margin: auto;
-		font-size: 1.1em;
-		text-align: left;
-	}
-
-	.competences, .qualites
-	{
-		flex-direction: column;
-		margin: auto;
-		font-size: 1.1em;
+		margin: 6px;
+		padding: 10px;
+		font-size: 16px;
 		text-align: left;
 	}
 
@@ -240,28 +233,51 @@ figure figcaption
 
 	h2
 	{
-		margin: auto;
+		margin: 10px;
 	}
 
-	h3
+	h3, p,
 	{
-		font-size: 1.1em;
 		margin: auto;
+		line-height: 2.2em;
+	}
+
+
+	.column1, .column2, .column3
+	{
+		flex-direction: column;
+		margin: auto;
+		font-size: 16px;
+		text-align: left;
+	}
+
+	.competences, .qualites
+	{
+		flex-direction: column;
+		margin: auto;
+		font-size: 30px;
+		text-align: left;
 	}
 
 	.welcomepicture
 	{
+		display: flex;
 		flex-direction: column;
 		border:  1px solid black;
 		margin: auto;
 		border-radius: 3%;
-		width: 150px;
-		height: 100px;
+		width: 85%;
+		height: auto;
 	}
 
 	p
 	{
 		flex-direction: column;
+	}
+
+	.contact
+	{
+		margin-top: 30px;
 	}
 
 }	
