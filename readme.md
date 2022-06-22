@@ -1,1 +1,1 @@
-# This will be my fist website using HTML5 and CSS3
+# This is my fist website using HTML5 and CSS3
