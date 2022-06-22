@@ -5,7 +5,7 @@
 	src:  url('Arcon-Rounded-Regular.otf');
 }
 
-h1
+h1 /*Welcome message*/
 {
 	font-size:  45px;
 	letter-spacing: 0.1em;
@@ -14,12 +14,12 @@ h1
 	text-align: center;
 }
 
-h2
+h2 /*About me*/
 {	
 	font-size: 16px;
 	word-spacing: 0.3em;
 	line-height: 1.8em;
-	text-align: justify;
+	text-align: left;
 	margin-right: 30px;
 	margin-left: 50px;
 	font-weight: normal;
@@ -30,10 +30,10 @@ strong
 	font-weight: normal;
 }
 
-h3
+h3 /*Titles*/
 {
 	font-size: 26px;
-	text-align: center;
+	text-align: left;
 	letter-spacing: 0.2em;
 	font-weight: bold;
 }
@@ -41,6 +41,7 @@ h3
 body
 {
 	background-image: url('background_picture1.jpg');
+	margin: 0;
 	min-height: 100%;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -49,7 +50,7 @@ body
 	color: #FFFFF0;
 }
 
-p
+p /*Subtitles*/
 {
 	line-height: 1.5em;
 	font-size: 18px;
@@ -57,22 +58,22 @@ p
 	font-weight: bold;
 }
 
-ul
+ul /*List with points*/
 {
-	font-size: 18px;
+	font-size: 16px;
 	line-height: 2.2em;
 	padding-left: 0;
 }
 
-ul li
+ul li /*Aligning the list with subtitle*/
 {
 	list-style-position: inside;
 }
 
-a
+.menulist
 {
 	text-decoration: none;
-	font-size: 1.3em;
+	font-size: 16px;
 	color: #FFFFF0;
 
 }
@@ -80,7 +81,6 @@ a
 .menulist:hover
 {
 	font-weight: bold;
-	font-size: 16px;
 }
 
 .welcomepicture
@@ -98,8 +98,8 @@ a
 	justify-content: center;
 	margin: auto;
 	border-radius: 3%;
-	max-height: 250px;
-	max-width: 450px;
+	width: 65%;
+	height: auto;
 }
 
 figure figcaption
@@ -113,7 +113,6 @@ figure figcaption
 	display: flex;
 	border: solid;
 	border-radius: 15px; color: #28282D;
-	margin-right: 30px;
 	background-color: #28282D;
 	margin-top: 40px;
 	margin-bottom: 40px;
@@ -130,19 +129,24 @@ figure figcaption
 .fa-ul
 {
 	text-decoration: none;
-	font-size: 18px;
 	line-height: 3em;
+}
+
+.uni
+{
+	list-style: none;
 }
 
 .flex-container
 {
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
 	align-content: center;
 }
 
 .column1, .column2, .column3
 {
+	font-size: 16px;
 	align-items: center;
 	width:  100%;
 	padding: 10px;
@@ -150,42 +154,27 @@ figure figcaption
 	margin-left: 60px;
 }
 
-.column4
+.column4, .column5
 {
-	align-items: center;
-	width:  100%;
+	font-size: 16px;
+	justify-content: space-around;
+	width: 400px;
 	padding: 10px;
-	margin: auto;
 }
 
-.competences
-{
-	align-items: center;
-	width:  100%;
-	padding: 10px;
-	margin-left: 192px;
-}
-
-.qualites
-{
-	align-items: center;
-	width:  100%;
-	padding: 10px;
-	margin-left: 230px;
-}
-
-.contact
+.contact /*The entire contact section*/
 {
 	display: flex;
 	justify-content: center;
 	align-content: center;
 }
 
-.contact2
+.contact2 /*Links*/
 {
 	text-decoration: none;
 	font-size: 18px;
 	line-height: 3em;
+	color: #FFFFF0;
 }
 
 .contact2:hover
@@ -193,14 +182,14 @@ figure figcaption
 	font-weight: bold;
 }
 
-.contact3
+.contact3 /*Phone and mail*/
 {
 	font-size: 18px;
 	line-height: 3em;
 }
 
 
-@media all and (max-width:  1024px)
+@media screen and (max-width: 1024px)
 {
 	body
 	{
@@ -210,13 +199,10 @@ figure figcaption
 
 	.menu
 	{
-			flex-direction: column;
-			margin: auto;
-			font-size: 16px;
-			line-height: 2.4em;
+		flex-direction: column;
+		line-height: 2.6em;
+		font-size: 16px;
 	}
-
-
 
 	.flex-container
 	{
@@ -246,17 +232,20 @@ figure figcaption
 	.column1, .column2, .column3
 	{
 		flex-direction: column;
-		margin: auto;
 		font-size: 16px;
 		text-align: left;
+		width: 100%;
+		margin: auto;
 	}
 
-	.competences, .qualites
+	.column4, .column5
 	{
 		flex-direction: column;
-		margin: auto;
 		font-size: 16px;
 		text-align: left;
+		justify-content: left;
+		width: 100%;
+		margin-bottom: 1em;
 	}
 
 	.welcomepicture
@@ -266,6 +255,12 @@ figure figcaption
 		border:  1px solid black;
 		margin: auto;
 		border-radius: 3%;
+		width: 85%;
+		height: auto;
+	}
+
+	.byepicture
+	{
 		width: 85%;
 		height: auto;
 	}
