@@ -130,32 +130,27 @@ nav a:hover{
 }
 
 .flex-container{
-	padding-left: 2em;
-	padding-right: 2em;
-	padding-top: 2em;
+	padding: 2em;
 }
 
 .flex-container1{
+	padding-top: 1em;
 	padding-left: 2em;
 	padding-right: 2em;
-	padding-top: 1em;
+	padding-bottom: 0;
+	margin: 0;
 }
 
 .columns{
 	display: flex;
 	flex-direction: column;
 	gap: 0.5rem;
-	border: 2px solid black;
 }
 
 /*This split the columns evenly*/
 .columns > *{
 	flex-grow: 1;
 	flex-shrink: 1;
-}
-
-.column{
-	background: orange;
 }
 
 p{
@@ -242,7 +237,7 @@ h3 {
 
 
 .welcome{
-	padding: 3em;
+	padding: 1em;
 	width: min(800px, 80%);
 }
 
@@ -250,8 +245,7 @@ h3 {
 	border-radius: 3%;
 	display: flex;
 	justify-content: center;
-	margin-top: 20px;
-	margin-left: 3em;
+	margin: 1em;
 }
 
 .byepicture{
