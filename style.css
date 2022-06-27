@@ -131,18 +131,31 @@ nav a:hover{
 
 .flex-container{
 	padding-left: 2em;
+	padding-right: 2em;
+	padding-top: 2em;
+}
+
+.flex-container1{
+	padding-left: 2em;
+	padding-right: 2em;
+	padding-top: 1em;
 }
 
 .columns{
 	display: flex;
 	flex-direction: column;
-	gap: 1rem;
-	padding: 2em;
+	gap: 0.5rem;
+	border: 2px solid black;
 }
 
 /*This split the columns evenly*/
 .columns > *{
-	flex: 1;
+	flex-grow: 1;
+	flex-shrink: 1;
+}
+
+.column{
+	background: orange;
 }
 
 p{
@@ -185,7 +198,7 @@ strong{
 
 /*Titles*/
 h3 {
-	font-size: 20px;
+	font-size: 18px;
 	letter-spacing: 0.1em;
 	font-weight: bold;
 	padding-top: 2em;
@@ -212,7 +225,7 @@ h3 {
 /*Links*/
 .contact2{
 	text-decoration: none;
-	font-size: 16px;
+	font-size: 18px;
 	line-height: 3em;
 	color: rgb(48,48,48);
 }
@@ -324,7 +337,12 @@ figure figcaption{
 .columns{
 	flex-direction: row;
 	gap: 5em;
-	width: min(90%);
+	width: max(90%);
+}
+
+/*This split the columns evenly*/
+.columns > *{
+	flex: 1;
 }
 
 .column{
