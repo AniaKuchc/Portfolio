@@ -245,13 +245,15 @@ h3 {
 	display: flex;
 	justify-content: center;
 	margin: 1em;
+	max-width: 100%;
+	height: auto;
 }
 
 .byepicture{
 	display: flex;
 	justify-content: left;
 	border-radius: 3%;
-	max-width: 65%;
+	max-width: 100%;
 	height: auto;
 }
 
@@ -408,6 +410,7 @@ h3{
 	margin: auto;
 	border-radius: 3%;
 	height: auto;
+	max-width: 65%;
 }
 
 figure figcaption{
