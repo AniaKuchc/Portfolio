@@ -133,10 +133,16 @@ nav a:hover{
 }
 
 .flex-container1{
-	padding-top: 1em;
+	padding-top: 2em;
 	padding-left: 2em;
 	padding-right: 2em;
 	padding-bottom: 0;
+	margin: 0;
+}
+
+.flex-container2{
+	padding-left: 2em;
+	padding-right: 2em;
 	margin: 0;
 }
 
@@ -237,7 +243,7 @@ h3 {
 
 .welcome{
 	padding: 1em;
-	width: min(800px, 80%);
+	width: min(800px, 95%);
 }
 
 .welcomepicture{
@@ -374,7 +380,7 @@ h3{
 	align-content: center;
 }
 
-.flex-container1{
+.flex-container1, .flex-container2{
 	display: flex;
 	justify-content: center;
 }
