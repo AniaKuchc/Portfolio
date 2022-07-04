@@ -162,7 +162,6 @@ p{
 	line-height: 1.5em;
 	font-size: 18px;
 	letter-spacing: 0.03em;
-	font-weight: bold;
 }
 
 /*List with points*/
@@ -184,8 +183,7 @@ h1{
 }
 
 /*About me*/
-.welcome1{	
-	font-size: 16px;
+.welcome1{
 	word-spacing: 0.3em;
 	line-height: 1.8em;
 	text-align: left;
